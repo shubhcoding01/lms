@@ -48,7 +48,7 @@ function Header() {
               </SignedIn>
               
               <SignedOut>
-                <SignInButton>
+                <SignInButton mode='modal'> 
                   <Button variant='outline' size='sm'>
                     Sign in
                     </Button>

@@ -10,7 +10,14 @@ function SearchInput() {
   return (
     
     <form>
-        <input type="text" />
+        <input 
+        type="text" 
+        placeholder="Search for books"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className='w-full rounded-full bg-secondary/80 px-4 py-2 pl-10 text-sm focus:outline-none 
+        focus:ring-2 focus:ring-primary '
+        />
         <Search />
     </form>
   )

@@ -4,6 +4,7 @@ import DarkModeToggle from './DarkModeToggel'
 import Link from 'next/link'
 import { BookMarkedIcon, BookOpen } from 'lucide-react'
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
+import SearchInput from './SearchInput'
 
 function Header() {
   return (
@@ -25,6 +26,7 @@ function Header() {
               Bookshelf
               </span>
               </Link>
+              <SearchInput />
               {/* <SearchInput />    */}
             </div>
             {/* right */}

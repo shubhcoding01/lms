@@ -9,7 +9,7 @@ function SearchInput() {
     const [searchQuery, setSearchQuery] = useState("")
   return (
     
-    <form>
+    <form className="relative">
         <input 
         type="text" 
         placeholder="Search for books"

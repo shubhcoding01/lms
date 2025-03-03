@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import DarkModeToggle from './DarkModeToggel'
 import Link from 'next/link'
-import { BookOpen } from 'lucide-react'
+import { BookMarkedIcon, BookOpen } from 'lucide-react'
 import { SignedIn } from '@clerk/nextjs'
 
 function Header() {
@@ -31,7 +31,14 @@ function Header() {
             <div className='flex h-16 items-center md-space-x-2'>
               <nav>
                 <SignedIn>
-                  <Link href='/myCourses'>
+                  <Link 
+                    prefetch={false}
+                    href='/my-Courses'
+                    className='flex items-center space-x-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors
+                    md:border md-border-border md:rounded-md md:px-4 md:py-2 '
+                    >
+                    <BookMarkedIcon className='h-4 w-4' />
+                    <span>My Courses</span>
                   </Link>
                   </SignedIn>
               </nav>

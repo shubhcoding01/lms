@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 import DarkModeToggle from './DarkModeToggel'
 import Link from 'next/link'
 import { BookMarkedIcon, BookOpen } from 'lucide-react'
-import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 
 function Header() {
   return (
@@ -48,6 +48,9 @@ function Header() {
               </SignedIn>
               
               <SignedOut>
+                <SignInButton>
+                  <Button>Sign in</Button>
+                </SignInButton>
               </SignedOut>  
             </div>
           </div>

@@ -1,5 +1,6 @@
 'use client'
 
+import { Search } from "lucide-react";
 import { useRouter } from "next/navigation"
 import { useState } from "react";
 
@@ -10,6 +11,7 @@ function SearchInput() {
     
     <form>
         <input type="text" />
+        <Search />
     </form>
   )
 }

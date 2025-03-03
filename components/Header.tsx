@@ -49,7 +49,9 @@ function Header() {
               
               <SignedOut>
                 <SignInButton>
-                  <Button>Sign in</Button>
+                  <Button variant='outline' size='sm'>
+                    Sign in
+                    </Button>
                 </SignInButton>
               </SignedOut>  
             </div>

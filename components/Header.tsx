@@ -3,6 +3,7 @@ import { Button } from './ui/button'
 import DarkModeToggle from './DarkModeToggel'
 import Link from 'next/link'
 import { BookOpen } from 'lucide-react'
+import { SignedIn } from '@clerk/nextjs'
 
 function Header() {
   return (
@@ -27,7 +28,14 @@ function Header() {
               {/* <SearchInput />    */}
             </div>
             {/* right */}
-            <div className='flex h-16 items-center md-space-x-2'></div>
+            <div className='flex h-16 items-center md-space-x-2'>
+              <nav>
+                <SignedIn>
+                  <Link href='/myCourses'>
+                  </Link>
+                  </SignedIn>
+              </nav>
+            </div>
           </div>
         <DarkModeToggle />
         </div>

@@ -42,9 +42,10 @@ function Header() {
                   </Link>
                   </SignedIn>
               </nav>
+              <DarkModeToggle />
             </div>
           </div>
-        <DarkModeToggle />
+        
         </div>
     </header>
   )

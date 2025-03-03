@@ -8,7 +8,7 @@ function SearchInput() {
     const [searchQuery, setSearchQuery] = useState("")
   return (
     
-    
+    <form></form>
   )
 }
 

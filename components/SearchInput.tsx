@@ -1,4 +1,4 @@
-
+'use client'
 
 function SearchInput() {
   return (

@@ -11,6 +11,8 @@ function Header() {
           <div className='flex h-16 items-center gap-4'>
             {/* left */}
             <div className='flex h-16 items-center gap-4'></div>
+            {/* right */}
+            <div className='flex h-16 items-center space-x-2'>
           </div>
         <DarkModeToggle />
         </div>
